@@ -85,7 +85,7 @@ object SubProject01_Build01 : BuildType({
             scriptContent = """echo "xxx""""
         }
         script {
-            name = "Step02"
+            name = "Step02_ping"
             id = "Step02"
             scriptContent = "ansible-playbook -i ping/inventory/prod/hosts ping/playbooks/ping_icmp.yml"
         }
