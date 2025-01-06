@@ -74,6 +74,10 @@ object SubProject01 : Project({
 object SubProject01_Build01 : BuildType({
     name = "build01"
 
+    vcs {
+        root(HttpsGithubComPiotrnajberekAnsibleRefsHeadsMain)
+    }
+
     steps {
         script {
             name = "Step01"
