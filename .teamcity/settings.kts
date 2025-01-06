@@ -32,7 +32,6 @@ project {
     subProject(SubProject01)
     subProject(SubProject02)
     subProject(SubProject03)
-    
 }
 
 object Build : BuildType({
@@ -71,6 +70,7 @@ object SubProject01_Build01 : BuildType({
     }
 })
 
+
 object SubProject02 : Project({
     name = "SubProject02"
 
@@ -94,8 +94,7 @@ object SubProject02_Build01 : BuildType({
     }
 })
 
+
 object SubProject03 : Project({
     name = "SubProject03"
-
 })
-
