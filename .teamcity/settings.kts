@@ -29,6 +29,10 @@ project {
 
     buildType(Build)
 
+    params {
+        param("username", "marian")
+    }
+
     subProject(SubProject01)
     subProject(SubProject02)
     subProject(SubProject03)
