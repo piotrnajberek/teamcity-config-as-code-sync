@@ -60,5 +60,33 @@ object SubProject01_Build01 : BuildType({
             id = "Step01"
             scriptContent = """echo "xxx""""
         }
+        script {
+            name = "Step02"
+            id = "Step02"
+            scriptContent = """echo "xxx2222""""
+        }
+    }
+})
+
+object SubProject02 : Project({
+    name = "SubProject02"
+
+    buildType(SubProject02_Build01)
+})
+
+object SubProject02_Build01 : BuildType({
+    name = "build01"
+
+    steps {
+        script {
+            name = "Step01"
+            id = "Step01"
+            scriptContent = """echo "xxx""""
+        }
+        script {
+            name = "Step02"
+            id = "Step02"
+            scriptContent = """echo "xxx2222""""
+        }
     }
 })
