@@ -47,4 +47,10 @@ object Build : BuildType({
 
 object SubProject01 : Project({
     name = "SubProject01"
+
+    buildType(SubProject01_Build01)
+})
+
+object SubProject01_Build01 : BuildType({
+    name = "build01"
 })
