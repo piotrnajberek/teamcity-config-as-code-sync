@@ -30,6 +30,7 @@ project {
     buildType(Build)
 
     params {
+        password("password", "credentialsJSON:2bec5dbc-3af3-4835-835c-f62d9029c967", display = ParameterDisplay.HIDDEN, readOnly = true)
         param("username", "marian")
     }
 
