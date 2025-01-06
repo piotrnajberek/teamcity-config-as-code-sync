@@ -31,6 +31,8 @@ project {
 
     subProject(SubProject01)
     subProject(SubProject02)
+    subProject(SubProject03)
+    
 }
 
 object Build : BuildType({
