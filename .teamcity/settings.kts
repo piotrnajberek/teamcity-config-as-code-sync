@@ -28,6 +28,8 @@ version = "2024.12"
 project {
 
     buildType(Build)
+
+    subProject(SubProject01)
 }
 
 object Build : BuildType({
@@ -40,4 +42,9 @@ object Build : BuildType({
             scriptContent = """echo "hellow""""
         }
     }
+})
+
+
+object SubProject01 : Project({
+    name = "SubProject01"
 })
