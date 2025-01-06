@@ -31,14 +31,6 @@ project {
 
     subProject(SubProject01)
     subProject(SubProject02)
-    subProject(SubProject03)
-    subProject(SubProject04)
-    subProject(SubProject05)
-    subProject(SubProject06)
-    subProject(SubProject07)
-    subProject(SubProject08)
-    subProject(SubProject09)
-    subProject(SubProject10)
 }
 
 object Build : BuildType({
