@@ -1,5 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
+import jetbrains.buildServer.configs.kotlin.vcs.GitVcsRoot
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -27,6 +28,8 @@ version = "2024.12"
 
 project {
 
+    vcsRoot(HttpsGithubComPiotrnajberekAnsibleRefsHeadsMain)
+
     buildType(Build)
 
     params {
@@ -48,6 +51,16 @@ object Build : BuildType({
             id = "echo"
             scriptContent = """echo "hellow""""
         }
+    }
+})
+
+object HttpsGithubComPiotrnajberekAnsibleRefsHeadsMain : GitVcsRoot({
+    name = "https://github.com/piotrnajberek/ansible#refs/heads/main"
+    url = "https://github.com/piotrnajberek/ansible"
+    branch = "refs/heads/main"
+    authMethod = password {
+        userName = "piotrnajberek"
+        password = "credentialsJSON:c29674f8-a043-48e9-93cd-526307de67ae"
     }
 })
 
