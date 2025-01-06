@@ -93,3 +93,9 @@ object SubProject02_Build01 : BuildType({
         }
     }
 })
+
+object SubProject03 : Project({
+    name = "SubProject03"
+
+})
+
