@@ -53,4 +53,12 @@ object SubProject01 : Project({
 
 object SubProject01_Build01 : BuildType({
     name = "build01"
+
+    steps {
+        script {
+            name = "Step01"
+            id = "Step01"
+            scriptContent = """echo "xxx""""
+        }
+    }
 })
