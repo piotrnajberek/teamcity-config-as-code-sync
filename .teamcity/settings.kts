@@ -30,6 +30,7 @@ project {
     buildType(Build)
 
     subProject(SubProject01)
+    subProject(SubProject02)
 }
 
 object Build : BuildType({
